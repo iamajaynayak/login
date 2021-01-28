@@ -1,0 +1,45 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 40vh;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+
+input {
+  height: 2em;
+  outline: none;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid;
+  margin-top: 1em;
+}
+
+input:active {
+  outline: none;
+}
+
+.btn {
+  width: 50%;
+  margin: 1.5em auto;
+  padding: 0.2em;
+  font-size: 1.1rem;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  transition: ease-in-out 0.5s;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #282828;
+}
