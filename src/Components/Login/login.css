@@ -43,3 +43,17 @@ input:active {
   cursor: pointer;
   background: #282828;
 }
+
+@media (max-width: 768px) {
+  .login-container {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .login-form {
+    width: 80%;
+    /* border: 1px solid blue; */
+  }
+  input {
+    margin-top: 2em;
+  }
+}

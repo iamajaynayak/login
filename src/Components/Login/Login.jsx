@@ -7,9 +7,16 @@ class Login extends Component {
         password : ''
     }
 
+    // Input field on change
     onInputChange = (event) => {
         const {name , value} = event.target;
         this.setState({[name] : value})
+    }
+
+    // On submit -- REMINDER : Do not forget me !
+    onInputSubmit = (event) => {
+        event.preventDefault();
+        console.log("submitted")
     }
     render() {
         console.log(this.state)
@@ -20,7 +27,7 @@ class Login extends Component {
                 <div className="login-form">
                     <input type="email" name="email" value={email} className="email" placeholder="Email" onChange={this.onInputChange} required/>
                     <input type="password" name="password" value={password} className="password" placeholder="Password" onChange={this.onInputChange} required/>
-                    <button className="btn login">Log in</button>
+                    <button className="btn login" onClick={this.onInputSubmit}>Log in</button>
                 </div>
             </div>
         )
