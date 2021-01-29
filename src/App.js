@@ -1,6 +1,6 @@
 import { Component } from "react";
-
-import Login from "./Components/Login/Login"; //temp
+import Header from "./Components/Header/Header";
+import Loginpage from "./Pages/Login/LoginPage";
 class App extends Component {
   state = {
     currentUser: null,
@@ -9,7 +9,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Login />
+        <Header />
+        <Loginpage />
       </div>
     );
   }

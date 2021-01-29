@@ -1,0 +1,10 @@
+.login-page {
+  margin-top: 2em;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+}

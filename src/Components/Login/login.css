@@ -22,7 +22,7 @@ input {
   border-left: transparent;
   border-right: transparent;
   border-bottom: 1px solid;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 input:active {
