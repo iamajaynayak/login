@@ -16,7 +16,6 @@ class Login extends Component {
     // On submit -- REMINDER : Do not forget me !
     onInputSubmit = (event) => {
         event.preventDefault();
-        console.log("submitted")
     }
     render() {
         console.log(this.state)
