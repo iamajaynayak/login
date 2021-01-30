@@ -10,7 +10,7 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
   height: 100%;
 
   /* border: 1px solid blue; */
