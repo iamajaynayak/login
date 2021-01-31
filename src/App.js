@@ -2,6 +2,8 @@ import { Component } from "react";
 import Header from "./Components/Header/Header";
 import Loginpage from "./Pages/Login/LoginPage";
 import HomePage from "./Pages/Homepage/Homepage";
+
+import { Route, Switch, Redirect } from "react-router-dom";
 class App extends Component {
   state = {
     currentUser: null,
@@ -11,8 +13,22 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        {/* <Loginpage /> */}
-        <HomePage />
+        <Switch>
+          <Route
+            exact
+            path="/login"
+            render={() =>
+              this.state.currentUser ? <Redirect to="/" /> : <Loginpage />
+            }
+          />
+          <Route
+            exact
+            path="/"
+            render={() =>
+              this.state.currentUser ? <Redirect to="/" /> : <Loginpage />
+            }
+          />
+        </Switch>
       </div>
     );
   }
