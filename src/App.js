@@ -21,13 +21,7 @@ class App extends Component {
               this.state.currentUser ? <Redirect to="/" /> : <Loginpage />
             }
           />
-          <Route
-            exact
-            path="/"
-            render={() =>
-              this.state.currentUser ? <Redirect to="/" /> : <Loginpage />
-            }
-          />
+          <Route exact path="/" component={HomePage} />
         </Switch>
       </div>
     );
